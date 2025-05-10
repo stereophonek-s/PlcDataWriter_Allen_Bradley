@@ -7,8 +7,8 @@ import base64
 from io import BytesIO
 from PIL import Image, ImageTk
 
-# Define your static PLC address
-PLC_ADDRESS = '192.168.33.100'
+# Define your static PLC address!!! 
+PLC_ADDRESS = '192.168.0.100'
 
 # Define the static starting points for each column
 START_CELL_LENGTH = 'J2'
@@ -151,11 +151,11 @@ Special Thanks to Library Creators:
 - This program makes use of various libraries, and we express our gratitude to their creators for their contributions.
 
 Author:
-- Stanimir Georgiev
-- Email: stereophonek@gmail.com
+- Your name (you probably will change something if you are using it so change the name)
+- Email: youremail.com (and the email)
 
 Distribution:
-- This program should only be distributed by Stanimir Georgiev.
+- This program should only be distributed by Stanimir Georgiev. (this applies 
 """
     messagebox.showinfo("About", about_text)
 
@@ -175,9 +175,9 @@ How the Program Works:
 4. Click the 'Write to PLC' button to write the data to the PLC.
 
 Endpoint Values:
-- 'Length End' starts at column 'J2' and allows up to 120 rows (J2 to J61).
-- 'Qty End' starts at column 'I2' and allows up to 120 rows (I2 to I61).
-- 'Order No End' starts at 'B2' and allows up to 120 rows (B2 to B61).
+- 'Length End' starts at column 'J2' and allows up to 120 rows (J2 to J121).
+- 'Qty End' starts at column 'I2' and allows up to 120 rows (I2 to I121).
+- 'Order No End' starts at 'B2' and allows up to 120 rows (B2 to B121).
 
 Please make sure to set these values correctly based on your specific Excel data structure.
 
